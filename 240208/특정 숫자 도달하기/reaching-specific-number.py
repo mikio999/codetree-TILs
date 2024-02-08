@@ -6,4 +6,4 @@ while A[i] < 250:
   addition += A[i]
   i += 1
 
-print(addition, addition/i)
+print(addition, round(addition/i,1))
