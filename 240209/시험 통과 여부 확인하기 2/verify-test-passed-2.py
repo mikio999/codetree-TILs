@@ -1,14 +1,9 @@
 n = int(input())
-a = [int(x) for x in input().split()]
-b = [int(x) for x in input().split()]
-c = [int(x) for x in input().split()]
-
-k = [a,b,c]
 count = 0
 
-
-for i in k:
-    if (sum(i)/4) >= 60 :
+for i in range(n):
+    a = [int(x) for x in input().split()]
+    if (sum(a)/4) >= 60 :
         count += 1
         print('pass')
     else:
