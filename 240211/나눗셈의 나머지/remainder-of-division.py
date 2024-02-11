@@ -1,18 +1,18 @@
 def solution(a, b):
-  S = [0] * b
+  remainder_count = [0] * b
 
   while a > 0:
-    c = a//b
-    a = c
-    d = a%b
-    S[d] += 1
+    quotient = a // b
+    remainder = a % b
 
-  sum_square = 0
-  for i in S:
-    k = pow(i, 2)
-    sum_square += k
+    remainder_count[remainder] += 1
+    a = quotient
 
-  return sum_square
+  squared_count = [count**2 for count in remainder_count]
+  sum_of_squared_count = sum(squared_count)
+
+  return sum_of_squared_count
 
 a, b = map(int, input().split())
+
 print(solution(a, b))
