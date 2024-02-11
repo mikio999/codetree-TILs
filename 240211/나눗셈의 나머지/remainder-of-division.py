@@ -1,7 +1,7 @@
 a, b = map(int, input().split())
 S = [0] * b
 
-while a >= 1:
+while a > 1:
   c = a//b
   a = c
   d = a%b
