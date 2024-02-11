@@ -13,3 +13,4 @@ for _ in range(q):
   elif b[0] == 3:
     for i in a[b[1]-1:b[2]]:
       print (i, end=' ')
+    print()
