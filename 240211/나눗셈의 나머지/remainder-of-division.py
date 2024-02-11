@@ -1,7 +1,7 @@
 def solution(a, b):
   remainder_count = [0] * b
 
-  while a > 0:
+  while a > 1:
     quotient = a // b
     remainder = a % b
 
