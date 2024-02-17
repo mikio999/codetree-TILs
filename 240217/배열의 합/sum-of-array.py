@@ -1,8 +1,9 @@
-arr_2d = []
+n = 4
 
-for _ in range(4):
-  a = [int(x) for x in input().split()]
-  arr_2d.append(a)
+arr_2d = [
+  list(map(int, input().split()))
+  for _ in range(n)
+]
 
-for i in range(4):
+for i in range(n):
   print(sum(arr_2d[i]))
