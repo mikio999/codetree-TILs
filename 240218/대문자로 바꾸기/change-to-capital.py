@@ -12,7 +12,8 @@ for i in range(5):
 
 for x in range(5):
   y = 0
-  print()
+  if x > 0 :
+    print()
   while y < 3:
     print(uppercase_list[x][y], end=' ')
     y += 1
