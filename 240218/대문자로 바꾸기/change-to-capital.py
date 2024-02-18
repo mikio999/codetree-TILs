@@ -5,15 +5,9 @@ for _ in range(5):
   lowercase_list.append(a)
 
 
-uppercase_list = lowercase_list
 for i in range(5):
-  for j in range(3):
-    uppercase_list[i][j] = lowercase_list[i][j].upper()
-
-for x in range(5):
-  y = 0
-  if x > 0 :
+  if i > 0:
     print()
-  while y < 3:
-    print(uppercase_list[x][y], end=' ')
-    y += 1
+  for j in range(3):
+   lowercase_list[i][j] = lowercase_list[i][j].upper()
+   print(lowercase_list[i][j], end=' ')
