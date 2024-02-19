@@ -1,6 +1,6 @@
 n = int(input())
 
-square = [ [0 for _ in range(5)] for _ in range(5) ]
+square = [ [0 for _ in range(n)] for _ in range(n) ]
 
 num = 1
 
