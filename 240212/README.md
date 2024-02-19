@@ -4,11 +4,11 @@
 24년 02월 12일 목표(90px)를 달성했어요🥳.
 
 ![100xp](https://img.shields.io/badge/EXP-100xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![5일째](https://img.shields.io/badge/연속학습-5일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-10|100xp|0일째❄️|
+10|100xp|5일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
@@ -21,7 +21,7 @@
 |[Novice Low / 1차원 배열 / Min/Max](https://www.codetree.ai/missions?missionId=4)|[[개념]n개의 숫자 중 최소](https://www.codetree.ai/missions/4/problems/min-of-n-num)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/mikio999/codetree-TILs/blob/main/240212/n%EA%B0%9C%EC%9D%98%20%EC%88%AB%EC%9E%90%20%EC%A4%91%20%EC%B5%9C%EC%86%8C/min-of-n-num.py)|
 |[Novice Low / 1차원 배열 / Min/Max](https://www.codetree.ai/missions?missionId=4)|[[연습]999 또는 -999](https://www.codetree.ai/missions/4/problems/999-or-999)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/mikio999/codetree-TILs/blob/main/240212/999%20%EB%98%90%EB%8A%94%20-999/999-or-999.py)|
 |[Novice Low / 1차원 배열 / Min/Max](https://www.codetree.ai/missions?missionId=4)|[[연습]n개의 숫자 중 최대 2개](https://www.codetree.ai/missions/4/problems/two-max-of-n-num)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/mikio999/codetree-TILs/blob/main/240212/n%EA%B0%9C%EC%9D%98%20%EC%88%AB%EC%9E%90%20%EC%A4%91%20%EC%B5%9C%EB%8C%80%202%EA%B0%9C/two-max-of-n-num.py)|
-|[Novice Low / 1차원 배열 / Min/Max](https://www.codetree.ai/missions?missionId=4)|[[연습]중복되지 않는 숫자 중 최대](https://www.codetree.ai/missions/4/problems/max-of-unique-number)|![보통][medium]|![Failed][failed]|[링크](https://github.com/mikio999/codetree-TILs/blob/main/240212/%EC%A4%91%EB%B3%B5%EB%90%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%88%AB%EC%9E%90%20%EC%A4%91%20%EC%B5%9C%EB%8C%80/max-of-unique-number.py)|
+|[Novice Low / 1차원 배열 / Min/Max](https://www.codetree.ai/missions?missionId=4)|[[연습]중복되지 않는 숫자 중 최대](https://www.codetree.ai/missions/4/problems/max-of-unique-number)|![보통][medium]|![Passed][passed]|[링크](https://github.com/mikio999/codetree-TILs/blob/main/240212/%EC%A4%91%EB%B3%B5%EB%90%98%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EC%88%AB%EC%9E%90%20%EC%A4%91%20%EC%B5%9C%EB%8C%80/max-of-unique-number.py)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
