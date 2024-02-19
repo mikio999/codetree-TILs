@@ -22,7 +22,5 @@ for i in range(n):
     else:
       new_grid[i][j] = 1
 
-for i in range(n):
-  for j in range(m):
-    print(new_grid[i][j], end= ' ')
-  print()
+for row in new_grid:  
+  print(' '.join(map(str, row)))
