@@ -1,11 +1,25 @@
 grid = [list(map(int, input().split()))
 for _ in range(2)]
 
-print(sum(grid[0])/4, sum(grid[1])/4, end = ' ')
+# 가로 평균
+for i in range(2):
+  sum_val = 0
+  for j in range(4):
+    sum_val += grid[i][j]
+  print(sum_val/4, end = ' ')
 print()
 
+# 새로 평균
 for i in range(4):
-  print((grid[0][i] + grid[1][i])/2, end = ' ')
+  sum_val = 0
+  for j in range(2):
+    sum_val += grid[j][i]
+  print(sum_val/2, end= ' ')
 print()
 
-print(round(((sum(grid[0])/4) + (sum(grid[1])/4))/2, 1))
+# 전체 평균
+total = 0
+for i in range(2):
+  for j in range(4):
+    total += grid[i][j]
+print(total/8)
