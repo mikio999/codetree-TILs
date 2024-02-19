@@ -22,4 +22,4 @@ total = 0
 for i in range(2):
   for j in range(4):
     total += grid[i][j]
-print(total/8)
+print(f"{total/8:.1f}")
