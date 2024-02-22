@@ -3,6 +3,6 @@ def LCM(m, n):
         if i%m == 0 and i%n == 0:
             return i
 
-m, n = map(int, input().split())
+n,m = map(int, input().split())
 
-print(LCM(m,n))
+print(LCM(n,m) or m*n)
