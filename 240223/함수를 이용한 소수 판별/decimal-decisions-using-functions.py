@@ -9,9 +9,10 @@ def find_prime(n):
 
 def add_prime(a,b):
   sum_prime = 0
-  for i in range(a, b+1):
-    if find_prime(i) :
-      sum_prime += i
+  if a>1:
+    for i in range(a, b+1):
+      if find_prime(i) :
+        sum_prime += i
   return sum_prime
 
 print(add_prime(a,b))
