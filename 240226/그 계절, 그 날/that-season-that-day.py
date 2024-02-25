@@ -42,7 +42,7 @@ def find_day(Y,M,D):
         return find_season(M)
       else:
         return -1
-  elif 9 <= M <= 12:
+  elif 8 <= M <= 12:
     if M % 2 == 0 :
       if D <= 31 :
         return find_season(M)
