@@ -19,14 +19,16 @@ def find_season(M):
     return 'Summer'
   elif 9 <= M <= 11:
     return 'Fall'
-  elif 1 <= M <= 2 or M == 12 :
+  elif 1 <= M <= 2:
+    return 'Winter'
+  elif M == 12 :
     return 'Winter'
   
 def find_day(Y,M,D):
   if M == 2 :
     if is_leap_year(Y) :
       if D <= 29 :
-        return 'Winter'
+        return find_season(M)
       else:
         return -1
     else:
@@ -40,7 +42,7 @@ def find_day(Y,M,D):
         return find_season(M)
       else:
         return -1
-  elif 9 <= M < 12:
+  elif 9 <= M <= 12:
     if M % 2 == 0 :
       if D <= 31 :
         return find_season(M)
