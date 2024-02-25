@@ -12,7 +12,7 @@ def day(m,d) :
       return True
     else:
       return False
-  elif 1 <= m < 7:
+  elif 1 <= m <= 7:
     if m%2 == 1:
       if 1 <= d <= 31:
         return True
