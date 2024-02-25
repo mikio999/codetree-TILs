@@ -29,6 +29,8 @@ def find_day(Y,M,D):
         return 'Winter'
       else:
         return -1
+    else:
+      return -1
   elif M < 8 :
     if M % 2 == 1 :
       if D <= 31 :
