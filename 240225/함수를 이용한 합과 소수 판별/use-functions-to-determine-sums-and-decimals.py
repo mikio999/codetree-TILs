@@ -12,9 +12,11 @@ def solution(a,b) :
     for i in range(a, b+1):
         if find_prime_number(i):
             if i < 10 :
-                count += 1
+                pass
+
             else :
                 if (int(str(i)[0]) + int(str(i)[1])) % 2 == 0:
+
                     count += 1
     return count
 
