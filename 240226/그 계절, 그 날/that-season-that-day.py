@@ -25,7 +25,7 @@ def find_season(M):
 def find_day(Y,M,D):
   if M == 2 :
     if is_leap_year(Y) :
-      if D >= 29 :
+      if D <= 29 :
         return 'Winter'
       else:
         return -1
