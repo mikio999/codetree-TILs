@@ -1,12 +1,10 @@
-def f(n, process=0):
+def f(n):
   if n == 1:
-    return process
+    return 0
   if n % 2 == 0:
-    process += 1
-    return f(n//2, process)
-  if n % 2 == 1:
-    process += 1
-    return f(3*n+1, process)
+    return f(n//2) + 1
+  else:
+    return f(3*n+1) + 1
   
 n = int(input())
 print(f(n))
