@@ -6,7 +6,7 @@ word_list = []
 
 for i in range(n):
   word = input()
-  if T in word:
+  if T == word[0:len(T)]:
     word_list.append(word)
 
 word_list.sort()
