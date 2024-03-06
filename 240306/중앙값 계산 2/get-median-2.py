@@ -1,15 +1,7 @@
 n = int(input())
 a = [int(x) for x in input().split()]
-b = []
-ans = []
-for i in range(n+1):
-  if i % 2 == 1:
-    b.append(a[:i])
-    b.sort()
 
-for j in range(len(b)):
-  b[j].sort()
-  ans.append(b[j][j])
-
-for _ in ans:
-  print(_, end = ' ')
+for i in range(n) : 
+  if i % 2 == 0:
+    sorted_arr = sorted(a[:i+1])
+    print(sorted_arr[i//2], end= ' ')
