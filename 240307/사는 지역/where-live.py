@@ -11,8 +11,8 @@ for i in range(n) :
   name, number, location = tuple(input().split())
   address_list.append(Address(name, number, location))
 
+target = 0
 for j in range(1,n):
-  target = 0
   if address_list[j].name > address_list[target].name :
     target = j
 
