@@ -7,14 +7,11 @@ spy_list = []
 
 for _ in range(5):
   name, score = tuple(input().split())
-  spy_list.append(Spy(name, score))
+  spy_list.append(Spy(name, int(score)))
 
-min_num = int(spy_list[0].score)
-target = 0
-
+min_num = 0
 for i in range(1,5):
-  if int(spy_list[i].score) < min_num:
-    target = i
-    min_num = int(spy_list[i].score)
+  if spy_list[min_num].score > spy_list[i].score:
+    min_num = i
 
-print(spy_list[target].name, spy_list[target].score)
+print(spy_list[min_num].name, spy_list[min_num].score)
