@@ -11,7 +11,7 @@ for i in range(1,n+1):
   x,y = tuple(map(int, input().split()))
   dots.append(Dot(x,y,i))
 
-dots.sort(key= lambda k: (abs(-k.x-k.y), k.num))
+dots.sort(key= lambda k: (abs(-k.x) + abs(-k.y), k.num))
 
 for j in dots:
   print(j.num)
