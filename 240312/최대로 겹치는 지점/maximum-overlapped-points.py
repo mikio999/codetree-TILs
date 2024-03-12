@@ -1,6 +1,6 @@
 n = int(input())
 lines = [tuple(map(int, input().split())) for _ in range(n)]
-MAX_R = 100
+MAX_R = 101
 
 checked = [0] * MAX_R
 
