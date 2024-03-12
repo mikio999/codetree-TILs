@@ -12,7 +12,7 @@ for i in range(n):
 max_dot = max(x2_dots)
 min_dot = min(x1_dots)
 
-lines = [0 for _ in range(min_dot, max_dot)]
+lines = [0 for _ in range(max_dot - min_dot + 1)]
 
 for i in line_dots:
   i[0] += -min_dot
@@ -20,7 +20,8 @@ for i in line_dots:
 
 
 for i in line_dots:
-  for j in range(i[0], i[1]-1):
+  for j in range(i[0], i[1]):
     lines[j] += 1
+
 
 print(max(lines))
