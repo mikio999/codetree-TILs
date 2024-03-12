@@ -1,9 +1,9 @@
 N, K = map(int, input().split())
-blocks = [0 for i in range(N)]
+blocks = [0 for _ in range(N)]
 
 for i in range(K):
   a,b = map(int, input().split())
-  for j in range(a,b+1):
-    blocks[j] += 1
-
+  while a < b+1:
+    blocks[a] += 1
+    a += 1
 print(max(blocks))
