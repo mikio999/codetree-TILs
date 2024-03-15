@@ -1,4 +1,4 @@
-m1, d1, m2, d2 = map(int,input().split())
+m1, d1, m2, d2 = map(int, input().split())
 days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 day_list = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
@@ -23,8 +23,8 @@ else:
     day = d1
     while True:
         if month == m2 and day == d2:
-           if elapsed_day >= distance:
-              elapsed_day += 1
+           if elapsed_day%7 >= distance:
+              count += 1
               break
            else :
               break
@@ -36,4 +36,5 @@ else:
               day = 1
               elapsed_day += 1
 
-print(elapsed_day//7)
+
+print(elapsed_day//7 + count)
