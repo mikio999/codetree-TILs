@@ -23,6 +23,7 @@ else:
     day = d1
     while True:
         if month == m2 and day == d2:
+           elapsed_day += 1
            if elapsed_day%7 >= distance:
               count += 1
               break
@@ -31,10 +32,9 @@ else:
         else: 
           day += 1
           elapsed_day += 1
-          if day > day_list[month]:
+          if day == day_list[month]:
               month += 1
               day = 1
-              elapsed_day += 1
 
 
 print(elapsed_day//7 + count)
