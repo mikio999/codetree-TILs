@@ -6,17 +6,13 @@ for i in range(N) :
   num_list.append(x)
 
 continue_list = []
-index = 0
 
-if N == 1 :
+if N > 1 :
+  for j in range(N-1):
+    if num_list[j] < num_list[j+1] :
+      continue_list.append(num_list[j])
+  if num_list[N-1] > num_list[N-2]:
+    continue_list.append(num_list[N-1])
+else :
   continue_list = num_list
-else: 
-  while index < N-1:
-    if num_list[index] > num_list[index+1] :
-      continue_list = []
-      index += 1
-    else :
-      continue_list.append(num_list[index])
-      index += 1
-
 print(len(continue_list))
