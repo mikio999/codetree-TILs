@@ -17,34 +17,29 @@ k1 += OFFSET
 m2 += OFFSET
 k2 += OFFSET
 
-if (x1, y1, x2, y2) == (m1, k1, m2, k2) :
+first_square = []
+for i in range(x1,x2) :
+  for j in range(y1,y2) :
+    grid[i][j] += 1
+    first_square.append((i,j))
+
+for i in range(m1, m2):
+  for j in range(k1, k2):
+    grid[i][j] += 1
+
+dots = []
+
+for i in range(MAX_R):
+  for j in range(MAX_R):
+    if grid[i][j] == 2 :
+      dots.append((i,j))
+
+for dot in dots:
+  first_square.remove(dot)
+
+if len(first_square) == 0 :
   print(0)
-else: 
-  first_square = []
-  for i in range(x1,x2) :
-    for j in range(y1,y2) :
-      grid[i][j] += 1
-      first_square.append((i,j))
-
-  for i in range(m1, m2):
-    for j in range(k1, k2):
-      grid[i][j] += 1
-
-  dots = []
-
-  for i in range(MAX_R):
-    for j in range(MAX_R):
-      if grid[i][j] == 2 :
-        dots.append((i,j))
-
-  remain_square = []
-
-  for dot in dots:
-    first_square.remove(dot)
-
-
-  new_dots = [[0] * MAX_R for _ in range(MAX_R)]
-
+else : 
   x_dots = []
   y_dots = []
 
