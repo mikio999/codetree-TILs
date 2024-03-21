@@ -18,7 +18,7 @@ for cmd in commands:
     start += cmd[0]-1
   if cmd[1] == 'L':
     for j in range(start, start - cmd[0], -1) :
-      line[j] = line[j] + 'W'
+      line[j] += 'W'
     start -= cmd[0]-1
 
 
@@ -28,7 +28,7 @@ gray = 0
 
 for dot in line:
   if len(dot) >= 4 :
-    if 'BW' in dot or 'WB' in dot:
+    if 'BW' or 'WB' in dot:
      gray += 1
   else:
     if len(dot) >= 1:
