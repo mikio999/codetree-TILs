@@ -5,6 +5,9 @@ for i in range(n) :
    x = int(input())
    numbers.append(x)
 
+# n = 8
+# numbers = [2,-1,-5,-2,-3,5,8,-9]
+
 sequence_list = []
 k = []
 index = 0
@@ -17,7 +20,9 @@ for i in range(n):
       sequence_list.append(k)
     else:
       sequence_list.append(k)
-      sequence_list.append(numbers[i])
+      k = []
+      k.append(numbers[i])
+      sequence_list.append(k)
   elif numbers[i] > 0:
     k.append(numbers[i])
     if numbers[i+1] < 0:
@@ -28,7 +33,7 @@ for i in range(n):
     if numbers[i+1] > 0:
       sequence_list.append(k)
       k = []
-    
+
 length_list = []
 
 for sequence in sequence_list:
