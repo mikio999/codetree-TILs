@@ -2,7 +2,7 @@ n = int(input())
 numbers=[int(input()) for _ in range(n)]
 
 sequences = []
-cnt = 1
+cnt = 0
 
 for i in range(n):
   if i == 0 :
