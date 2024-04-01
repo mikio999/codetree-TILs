@@ -2,15 +2,15 @@ const fs = require('fs')
 const input = fs.readFileSync(0).toString().trim().split(`\n`)
 
 const target = input[10]
-const answer = []
+const cnt = 0
 for (let i = 0; i < 10; i++ ) {
     let strLength = input[i].length
     if (input[i][strLength-1] === target) {
-        answer.push(input[i])
+        cnt ++;
         console.log(input[i])
     }
 }
 
-if (answer.length === 0) {
+if (cnt === 0) {
    console.log('None')
 }
