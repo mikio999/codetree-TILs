@@ -6,7 +6,7 @@ const cnt = 0
 for (let i = 0; i < 10; i++ ) {
     let strLength = input[i].length
     if (input[i][strLength-1] === target) {
-        cnt ++;
+        cnt++;
         console.log(input[i])
     }
 }
