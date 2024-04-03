@@ -10,8 +10,10 @@ for (let i = 1; i < q+1; i++ ) {
     if (question[0] === '1' ) {
         const a = Number(question[1]) - 1
         const b = Number(question[2]) - 1
-        ans[a] = s[b]
-        ans[b] = s[a]
+        const copyA = ans[a]
+        const copyB = ans[b]
+        ans[a] = copyB
+        ans[b] = copyA
         console.log(ans.join(''))
     }
     else if (question[0] === '2') {
@@ -19,5 +21,6 @@ for (let i = 1; i < q+1; i++ ) {
         const b = question[2]
         ans = ans.join('').replaceAll(a,b)
         console.log(ans)
+        ans = ans.split('')
     }
 }
