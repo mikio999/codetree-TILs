@@ -1,14 +1,16 @@
 const fs = require('fs')
 const N = Number(fs.readFileSync(0).toString().trim())
 
-let stars = ''
+
 function f(n) {
     if (n === 0) {
         return;
     }
-    stars += '*' 
-    console.log(stars)
     f(n-1)
+    for (let i = 0; i < n; i++) {
+        process.stdout.write('*')
+    }
+    console.log();
 }
 
 f(N)
