@@ -5,7 +5,7 @@ function f(n) {
     if (n < 10) {
         return n ** 2
     }
-    let digit = (n % 10) ; 
+    let digit = n % 10
     return f(parseInt(n/10)) + digit ** 2
 }
 
