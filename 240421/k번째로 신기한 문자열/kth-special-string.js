@@ -9,7 +9,7 @@ const T = first[2]
 
 let TList = []
 
-for (let i = 1; i < input.length; i++ ) {
+for (let i = 1; i < n; i++ ) {
     if (T === input[i].slice(0,2)) {
         TList.push(input[i])
     }
