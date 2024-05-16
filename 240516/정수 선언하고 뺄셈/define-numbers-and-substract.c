@@ -5,11 +5,7 @@ int main() {
     int a = 97;
     int b = 13;
     int c = a - b;
-    printf("%d",a);
-    printf(" - ");
-    printf("%d",b);
-    printf(" = ");
-    printf("%d", c);
+    printf("%d - %d = %d", a, b, c);
 
     return 0;
 }
