@@ -8,6 +8,6 @@ public class Main {
         a = sc.nextInt();
         b = sc.nextInt();
 
-        System.out.printf("%d %d", b, a);
+        System.out.println(b+ " " + a);
     }
 }
