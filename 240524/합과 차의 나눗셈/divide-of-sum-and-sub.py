@@ -1,2 +1,4 @@
 a, b = map(int,input().split(' '))
-print(round(((a+b)/(a-b)),2))
+c = (a+b)/(a-b)
+
+print(round(c,2))
