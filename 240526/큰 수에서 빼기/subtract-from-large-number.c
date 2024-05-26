@@ -11,7 +11,7 @@ int main() {
         printf("%d", b-a);
     }
     else {
-        printf(0);
+        printf("%d", 0);
     }
     return 0;
 }
