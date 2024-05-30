@@ -4,14 +4,14 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int n;
     scanf("%d", &n);
-    if (n < 0) {
-        printf("ice");
+    if (n >= 100) {
+        printf("vapor");
     }
-    else if (0 <= n < 100) {
+    else if (n >= 0) {
         printf("water");
     }
     else {
-        printf("vapor");
+        printf("ice");
     }
     return 0;
 }
