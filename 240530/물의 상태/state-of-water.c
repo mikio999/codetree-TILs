@@ -7,7 +7,7 @@ int main() {
     if (n < 0) {
         printf("ice");
     }
-    else if (0 <= n <= 100) {
+    else if (0 <= n < 100) {
         printf("water");
     }
     else {
