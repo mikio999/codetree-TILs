@@ -8,7 +8,7 @@ let isSorted = true;
 do {
     isSorted = true;
     let temp
-    for (let i = 0; i <= n-1; i++) {
+    for (let i = 0; i < n-2; i++) {
         if (numbers[i] > numbers[i+1]) {
             temp = numbers[i];
             numbers[i] = numbers[i+1];
