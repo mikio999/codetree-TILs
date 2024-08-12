@@ -10,8 +10,8 @@ for (let i = 1; i < n; i++ ) {
         arr[j+1] = arr[j]
         arr[j] = key;
         j--;
-        arr[j+1] = key;
     }
+    arr[j+1] = key;
 }
 
 console.log(arr.join(' '))
