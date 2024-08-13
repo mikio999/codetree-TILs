@@ -4,7 +4,7 @@ const n = input[0];
 const arr = input[1].split(' ').map(Number);
 
 const getDigit = (num, target) => {
-    return Math.floor(Math.abs(num)/(10**target))%10
+    return Math.floor(Math.abs(num)/(Math.pow(10,target)))%10
 }
 
 const radixSort = (n,arr) => {
