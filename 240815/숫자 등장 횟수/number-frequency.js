@@ -8,11 +8,11 @@ const questions = input[2].split(' ').map(Number)
 const countNums = (arr, target) => {
   const k = new Map()
     for (let i=0; i < n; i++) {
-        if (k.has(numbers[i])) {
-            k.set(numbers[i], k.get(numbers[i]) + 1)
+        if (k.has(arr[i])) {
+            k.set(arr[i], k.get(arr[i]) + 1)
         }
         else {
-            k.set(numbers[i], 1)
+            k.set(arr[i], 1)
         }
     }
     return (k.get(target) || 0)
