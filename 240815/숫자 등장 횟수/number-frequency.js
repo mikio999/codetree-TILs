@@ -19,7 +19,8 @@ const countNums = (arr, target) => {
 }
 
 
-
+result = []
 for (let j=0; j<m; j++) {
-    console.log(countNums(numbers, questions[j]))
+    result.push(countNums(numbers, questions[j]))
 }
+console.log(result.join(' '))
