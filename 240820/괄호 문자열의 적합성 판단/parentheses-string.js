@@ -11,6 +11,9 @@ commands.forEach((item) => {
         if (stack[stack.length-1] === '(') {
             stack.pop()
         }
+        else {
+            stack.push(')')
+        }
     }
 })
 
