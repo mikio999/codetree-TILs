@@ -1,13 +1,11 @@
-const fs = require('fs')
-const input = fs.readFileSync(0).toString().split(`\n`)
+const fs = require("fs");
+const input = fs.readFileSync(0).toString().split(`\n`);
 
-const n = Number(input[0])
-const peopleInStores = []
-for (let i=0; i<n; i++) {
-    peopleInStores.push(Number(input[1].split(' ')[i]))
-}
-const maxLeaderCapacity = Number(input[2].split(' ')[0])
-const maxMemberCapacity = Number(input[2].split(' ')[1])
+const n = Number(input[0]);
+const peopleInStores = input[1].split(" ").map(Number);
+const capacities = input[2].split(" ");
+const maxLeaderCapacity = Number(capacities[0]);
+const maxMemberCapacity = Number(capacities[1]);
 
 let totalCount = 0;
 
