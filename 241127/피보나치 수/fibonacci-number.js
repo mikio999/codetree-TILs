@@ -1,19 +1,23 @@
-const fs = require('fs')
-const n = fs.readFileSync(0).toString().trim()
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-const MAX_NUMBER = 45;
-const memo = new Array(MAX_NUMBER).fill(-1);
+rl.on('line', function(line) {
+  const n = parseInt(line.trim());
+  const MAX_NUMBER = 45;
+  const memo = new Array(MAX_NUMBER + 1).fill(0);
 
-function fibbo(n) {
-  if (memo[n] !== -1) {
-    return memo[n];
+  memo[1] = 1;
+  memo[2] = 1;
+
+  for (let i = 3; i <= n; i++) {
+    memo[i] = memo[i - 1] + memo[i - 2];
   }
-  if (n <= 2) {
-    return 1;
-  } else {
-    return fibbo(n - 1) + fibbo(n - 2);
-  }
-}
 
-
-console.log(fibbo(Number(n)))
+  console.log(memo[n]);
+  rl.close();
+}).on('close', function() {
+  process.exit();
+});
